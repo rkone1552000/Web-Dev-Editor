@@ -1,0 +1,129 @@
+body
+{
+  margin: 0;
+
+}
+.top-pane
+{
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container
+{
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: #111;
+}
+
+.editor-title
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgoldenrod;
+  color: greenyellow;
+  font-weight: bold;
+  padding: .5rem .5rem .5rem 1rem;
+  border-top-right-radius: .5rem ;
+  border-top-left-radius: .5rem;
+}
+
+.CodeMirror 
+{
+  height:  100% !important;
+}
+
+.wrap
+{
+  flex-grow: 1;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  overflow: hidden;
+}
+
+.editor-container.collapsed 
+{
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll
+{
+  position: absolute;
+}
+
+#min
+{
+  background-color: lightcoral;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: yellow;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0px 10px 0px 10px; 
+  margin-left: .5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li .nav{
+  float: left;
+}
+
+li .nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-right: 2px dotted white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+li .nav:hover{
+  background-color: #111;
+}
+
+iframe
+{
+  position: absolute; 
+  height: 100%; 
+  border: none
+}
+
+li #save
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid white;
+  font-weight: bold;
+  margin-left: 90%;
+}
+
+li #save:hover{
+  background-color: #111;
+}
