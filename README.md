@@ -8,4 +8,4 @@ Online code editor using React
 Note:
 In this project repository, 
 if npm not usable commanf then you need to install npm in the directory where project resides:
--> npm install
+"npm install"
